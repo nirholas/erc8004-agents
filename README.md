@@ -21,7 +21,8 @@
 <img src="https://img.shields.io/badge/chains-22_EVM-22C55E?style=for-the-badge&labelColor=000" alt="22 Chains" />
 <img src="https://img.shields.io/badge/standard-ERC--8004-FF6B6B?style=for-the-badge&labelColor=000" alt="ERC-8004" />
 
-<br><br>
+<br><br> https://erc8004.agency
+backup: https://erc8004-agents.vercel.app
 
 <a href="https://erc8004.agency/"><b>▶ Launch App</b></a> · 
 <a href="#-quick-start">Quick Start</a> · 
