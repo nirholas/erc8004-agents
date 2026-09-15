@@ -5,6 +5,11 @@
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -17,8 +22,9 @@
     "start": "node dist/index.js",
     "test": "vitest run",
     "test:watch": "vitest",
-    "lint": "eslint src/",
+    "lint": "tsc --noEmit",
     "type-check": "tsc --noEmit",
+    "prepack": "npm run build",
     "clean": "rm -rf dist"
   },
   "keywords": [
@@ -51,5 +57,17 @@
   },
   "engines": {
     "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nirholas/erc8004-agent-creator.git",
+    "directory": "agent-runtime"
+  },
+  "homepage": "https://erc8004.agency",
+  "bugs": {
+    "url": "https://github.com/nirholas/erc8004-agent-creator/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

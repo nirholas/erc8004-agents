@@ -12,15 +12,20 @@
     "erc8004": "./dist/index.js"
   },
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "dist/"
+    "dist/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
   ],
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts",
-    "lint": "eslint src --ext .ts"
+    "lint": "tsc --noEmit",
+    "prepack": "npm run build"
   },
   "dependencies": {
     "chalk": "^4.1.2",
@@ -43,5 +48,12 @@
     "bnb-chain",
     "blockchain",
     "cli"
-  ]
+  ],
+  "homepage": "https://erc8004.agency",
+  "bugs": {
+    "url": "https://github.com/nirholas/erc8004-agent-creator/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
